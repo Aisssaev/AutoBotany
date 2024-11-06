@@ -79,7 +79,8 @@
   "item.botanicalextramachinery.catalyst_speed": "Speed Catalyst",
   "item.botanicalextramachinery.catalyst_stone_infinity": "Infinity Stone Catalyst",
 
-  "botanicalextramachinery.tooltip.screen": "%1$s / %2$s Mana",
+  "botanicalextramachinery.tooltip.screen.mana": "%1$s / %2$s Mana",
+  "botanicalextramachinery.tooltip.screen.energy": "%1$s / %2$s EU",
   "botanicalextramachinery.tooltip.screen.catalyst_slot": "Slot for catalysts",
   "botanicalextramachinery.tooltip.screen.upgrade_slot": "Slot for upgrades",
   "botanicalextramachinery.tooltip.screen.livingrock_slot": "Slot for livingrocks",

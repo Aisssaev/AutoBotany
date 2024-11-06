@@ -99,6 +99,10 @@ dependencies {
     implementation fg.deobf("curse.maven:patchouli-306770:4031402")
     implementation fg.deobf("curse.maven:jei-238222:5793305")
     implementation fg.deobf("curse.maven:curios-309927:5494603")
+    implementation fg.deobf("curse.maven:ic2-classic-242942:5612597")
+    implementation fg.deobf("curse.maven:carbon-config-898104:5290827")
+    implementation fg.deobf("curse.maven:the-one-probe-245211:3965693")
+
 
     implementation fg.deobf("curse.maven:applied-energistics-2-223794:5014801")
     runtimeOnly fg.deobf("appeng:appliedenergistics2-forge:12.9.9:api")

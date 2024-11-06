@@ -1,0 +1,12 @@
+{
+  "type": "autobotany:greenhouse",
+  "consumable_input": {
+    "item": "minecraft:coal"
+  },
+  "non_consumable_input": {
+    "item": "botania:endoflame"
+  },
+  "mana_output_per_tick": 40,
+  "energy_per_tick": 40,
+  "ticks": 100
+}
