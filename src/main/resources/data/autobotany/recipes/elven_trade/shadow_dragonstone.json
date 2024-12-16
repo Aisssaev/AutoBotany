@@ -1,0 +1,16 @@
+{
+  "type": "botania:elven_trade",
+  "ingredients": [
+    {
+      "item": "autobotany:shadow_ingot"
+    },
+    {
+      "item": "autobotany:saffron_dragonstone"
+    }
+  ],
+  "output": [
+    {
+      "item": "autobotany:shadow_dragonstone"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "type": "botania:terra_plate",
+  "ingredients": [
+    {
+      "item": "autobotany:saffron_ingot"
+    },
+    {
+      "item": "botania:gaia_ingot"
+    },
+    {
+      "item": "botania:gaia_ingot"
+    },
+    {
+      "item": "autobotany:malachite_ingot_block"
+    }
+  ],
+  "mana": 1500000,
+  "result": {
+    "item": "autobotany:shadow_ingot"
+  }
+}

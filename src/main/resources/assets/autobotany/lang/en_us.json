@@ -1,0 +1,128 @@
+{
+  "itemGroup.autobotany": "Extra Botania Machinery",
+
+  "block.autobotany.base_mana_pool": "Base Mana Pool",
+  "block.autobotany.upgraded_mana_pool": "Upgraded Mana Pool",
+  "block.autobotany.advanced_mana_pool": "Advanced Mana Pool",
+  "block.autobotany.ultimate_mana_pool": "Ultimate Mana Pool",
+
+  "block.autobotany.base_runic_altar": "Base Runic Altar",
+  "block.autobotany.upgraded_runic_altar": "Upgraded Runic Altar",
+  "block.autobotany.advanced_runic_altar": "Advanced Runic Altar",
+  "block.autobotany.ultimate_runic_altar": "Ultimate Runic Altar",
+
+  "block.autobotany.base_daisy": "Basic Pure Daisy",
+  "block.autobotany.upgraded_daisy": "Upgraded Pure Daisy",
+  "block.autobotany.advanced_daisy": "Advanced Pure Daisy",
+  "block.autobotany.ultimate_daisy": "Ultimate Pure Daisy",
+
+  "block.autobotany.base_apothecary": "Basic Apothecary",
+  "block.autobotany.upgraded_apothecary": "Upgraded Apothecary",
+  "block.autobotany.advanced_apothecary": "Advanced Apothecary",
+  "block.autobotany.ultimate_apothecary": "Ultimate Apothecary",
+
+  "block.autobotany.base_industrial_agglomeration_factory": "Basic Industrial Agglomeration Factory",
+  "text.autobotany.base_industrial_agglomeration_factory_label_text_1": "Basic Industrial",
+  "text.autobotany.base_industrial_agglomeration_factory_label_text_2": "Agglomeration Factory",
+
+  "block.autobotany.upgraded_industrial_agglomeration_factory": "Upgraded Industrial Agglomeration Factory",
+  "text.autobotany.upgraded_industrial_agglomeration_factory_label_text_1": "Upgraded Industrial",
+  "text.autobotany.upgraded_industrial_agglomeration_factory_label_text_2": "Agglomeration Factory",
+
+  "block.autobotany.advanced_industrial_agglomeration_factory": "Advanced Industrial Agglomeration Factory",
+  "text.autobotany.advanced_industrial_agglomeration_factory_label_text_1": "Advanced Industrial",
+  "text.autobotany.advanced_industrial_agglomeration_factory_label_text_2": "Agglomeration Factory",
+
+  "block.autobotany.ultimate_industrial_agglomeration_factory": "Ultimate Industrial Agglomeration Factory",
+  "text.autobotany.ultimate_industrial_agglomeration_factory_label_text_1": "Ultimate Industrial",
+  "text.autobotany.ultimate_industrial_agglomeration_factory_label_text_2": "Agglomeration Factory",
+
+  "block.autobotany.base_alfheim_market": "Basic Alfheim Market",
+  "block.autobotany.upgraded_alfheim_market": "Upgraded Alfheim Market",
+  "block.autobotany.advanced_alfheim_market": "Advanced Alfheim Market",
+  "block.autobotany.ultimate_alfheim_market": "Ultimate Alfheim Market",
+
+  "block.autobotany.base_orechid": "Basic Orechid",
+  "block.autobotany.upgraded_orechid": "Upgraded Orechid",
+  "block.autobotany.advanced_orechid": "Advanced Orechid",
+  "block.autobotany.ultimate_orechid": "Ultimate Orechid",
+
+  "block.autobotany.electric_greenhouse": "Electric Greenhouse",
+  "block.autobotany.jaded_amaranthus": "Jaded Amaranthus",
+
+  "block.autobotany.malachite_dragonstone_block": "Malachite Dragonstone Block",
+  "block.autobotany.saffron_dragonstone_block": "Saffron Dragonstone Block",
+  "block.autobotany.shadow_dragonstone_block": "Shadow Dragonstone Block",
+  "block.autobotany.crimson_dragonstone_block": "Crimson Dragonstone Block",
+
+  "block.autobotany.malachite_ingot_block": "Malachite Block",
+  "block.autobotany.saffron_ingot_block": "Saffron Block",
+  "block.autobotany.shadow_ingot_block": "Shadow Block",
+  "block.autobotany.crimson_ingot_block": "Crimson Block",
+
+  "item.autobotany.malachite_spark": "Malachite Spark",
+  "item.autobotany.saffron_spark": "Saffron Spark",
+  "item.autobotany.shadow_spark": "Shadow Spark",
+  "item.autobotany.crimson_spark": "Crimson Spark",
+
+  "item.autobotany.malachite_dragonstone": "Malachite Dragonstone",
+  "item.autobotany.saffron_dragonstone": "Saffron Dragonstone",
+  "item.autobotany.shadow_dragonstone": "Shadow Dragonstone",
+  "item.autobotany.crimson_dragonstone": "Crimson Dragonstone",
+
+  "item.autobotany.malachite_ingot": "Malachite ingot",
+  "item.autobotany.saffron_ingot": "Saffron ingot",
+  "item.autobotany.shadow_ingot": "Shadow ingot",
+  "item.autobotany.crimson_ingot": "Crimson ingot",
+
+  "item.autobotany.manasteel_advanced_alloy": "Manasteel Advanced Alloy",
+  "item.autobotany.manasteel_ingot_advanced_alloy": "Manasteel Ingot Advanced Alloy",
+  "item.autobotany.elementium_advanced_alloy": "Elementium Advanced Alloy",
+  "item.autobotany.elementium_ingot_advanced_alloy": "Elementium Ingot Advanced Alloy",
+  "item.autobotany.terrasteel_advanced_alloy": "Terrasteel Advanced Alloy",
+  "item.autobotany.terrasteel_ingot_advanced_alloy": "Terrasteel Ingot Advanced Alloy",
+  "item.autobotany.rune_tp": "Rune Teleportation",
+  "item.autobotany.rune_energy": "Rune Energy",
+
+  "item.autobotany.catalyst_mana_infinity": "Infinity Mana Catalyst",
+  "item.autobotany.catalyst_living_rock_infinity": "Infinity LivingRock Catalyst",
+  "item.autobotany.catalyst_water_infinity": "Infinity Water Catalyst",
+  "item.autobotany.catalyst_seed_infinity": "Infinity Seed Catalyst",
+  "item.autobotany.catalyst_speed": "Speed Catalyst",
+  "item.autobotany.catalyst_stone_infinity": "Infinity Stone Catalyst",
+  "item.autobotany.catalyst_petal": "Petal Catalyst",
+  "item.autobotany.catalyst_petal_block": "Petal Block Catalyst",
+
+  "item.autobotany.module_efficiency": "Module Greenhouse: Efficiency",
+  "item.autobotany.module_speed1": "Base Module Greenhouse: Speed",
+  "item.autobotany.module_speed2": "Advanced Module Greenhouse: Speed",
+  "item.autobotany.module_speed3": "Ultimate Module Greenhouse: Speed",
+  "item.autobotany.module_mana_storage1": "Base Module Greenhouse: Mana Storage",
+  "item.autobotany.module_mana_storage2": "Advanced Module Greenhouse: Mana Storage",
+  "item.autobotany.module_mana_storage3": "Ultimate Module Greenhouse: Mana Storage",
+  "item.autobotany.module_energy_storage1": "Base Module Greenhouse: Energy Storage",
+  "item.autobotany.module_energy_storage2": "Advanced Module Greenhouse: Energy Storage",
+  "item.autobotany.module_energy_storage3": "Ultimate Module Greenhouse: Energy Storage",
+  "item.autobotany.module_recipe_multiplier1": "Base Module Greenhouse: Extension",
+  "item.autobotany.module_recipe_multiplier2": "Advanced Module Greenhouse: Extension",
+  "item.autobotany.module_recipe_multiplier3": "Ultimate Module Greenhouse: Extension",
+
+  "autobotany.tooltip.screen.mana": "Mana: %1$s §eMana / %2$s §eMana",
+  "autobotany.tooltip.screen.energy": "%1$s / %2$s EU",
+  "autobotany.tooltip.screen.catalyst_slot": "Slot for catalysts",
+  "autobotany.tooltip.screen.upgrade_slot": "Slot for upgrades",
+  "autobotany.tooltip.screen.livingrock_slot": "Slot for livingrocks",
+  "autobotany.tooltip.screen.seed_slot": "Slot for seeds",
+  "autobotany.tooltip.screen.ore_slot": "Slot for ores (Filter)",
+
+  "autobotany.tooltip.screen.charge": "Charge: %1$s §eEU / %2$s §eEU",
+  "autobotany.screen.title.consumption": "Consumption: %1$s §eEU/t",
+  "autobotany.screen.title.greenhouse": "Electric Greenhouse",
+  "autobotany.screen.title.ticks": "%1$s ticks",
+  "autobotany.tooltip.mana": "Mana: %1$s",
+
+  "autobotany.tooltip.item.mana": "§bCurrent Mana:§r §6 %1$s",
+  "autobotany.tooltip.item.water": "§bCurrent Water:§r §6 %1$s",
+  "autobotany.tooltip.item.upgrade_speed_1": "§6Speeds up crafting by §d4 times",
+  "autobotany.tooltip.item.upgrade_speed_2": "§6Only for §cindustrial agglomeration factory"
+}

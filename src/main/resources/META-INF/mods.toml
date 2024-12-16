@@ -4,48 +4,41 @@ license="${mod_license}"
 loggFile="logo.png"
 
 [[mods]]
-modId="botanicalextramachinery"
+modId="autobotany"
 version="${mod_version}"
 displayName="${mod_name}"
 authors="${mod_authors}"
 description='''${mod_description}'''
 
-[[dependencies.botanicalextramachinery]]
+[[dependencies.autobotany]]
     modId="forge"
     mandatory=true
     versionRange="${forge_version_range}"
     ordering="NONE"
     side="BOTH"
 
-[[dependencies.botanicalextramachinery]]
+[[dependencies.autobotany]]
     modId="minecraft"
     mandatory=true
     versionRange="${minecraft_version_range}"
     ordering="NONE"
     side="BOTH"
 
-[[dependencies.botanicalextramachinery]]
+[[dependencies.autobotany]]
     modId="libx"
     mandatory=true
     versionRange="[1.19.2-4.2.8,)"
     ordering="NONE"
     side="BOTH"
 
-[[dependencies.botanicalextramachinery]]
+[[dependencies.autobotany]]
     modId="botania"
     mandatory=true
     versionRange="[1.19.2-439,)"
     ordering="NONE"
     side="BOTH"
 
-[[dependencies.botanicalextramachinery]]
-    modId="botanicalmachinery"
-    mandatory=true
-    versionRange="[1.19.2-2.0.5,)"
-    ordering="NONE"
-    side="BOTH"
-
-[[dependencies.botanicalextramachinery]]
+[[dependencies.autobotany]]
     modId="ae2"
     mandatory=true
     versionRange="[12.9.9,)"

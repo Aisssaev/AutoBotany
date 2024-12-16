@@ -1,0 +1,128 @@
+{
+  "itemGroup.autobotany": "Экстра ботанические механизмы",
+
+  "block.autobotany.base_mana_pool": "Основной бассейн маны",
+  "block.autobotany.upgraded_mana_pool": "Улучшенный бассейн маны",
+  "block.autobotany.advanced_mana_pool": "Продвинутый бассейн маны",
+  "block.autobotany.ultimate_mana_pool": "Совершенные бассейн маны",
+
+  "block.autobotany.base_runic_altar": "Основной рунический алтарь",
+  "block.autobotany.upgraded_runic_altar": "Улучшенный  рунический алтарь",
+  "block.autobotany.advanced_runic_altar": "Продвинутый рунический алтарь",
+  "block.autobotany.ultimate_runic_altar": "Совершенные рунический алтарь",
+
+  "block.autobotany.base_daisy": "Основная чистая маргаритка",
+  "block.autobotany.upgraded_daisy": "Улучшенная чистая маргаритка",
+  "block.autobotany.advanced_daisy": "Продвинутая чистая маргаритка",
+  "block.autobotany.ultimate_daisy": "Совершенная чистая маргаритка",
+
+  "block.autobotany.base_apothecary": "Основной аптекарь",
+  "block.autobotany.upgraded_apothecary": "Улучшенный аптекарь",
+  "block.autobotany.advanced_apothecary": "Продвинутый аптекарь",
+  "block.autobotany.ultimate_apothecary": "Совершенный аптекарь",
+
+  "block.autobotany.base_industrial_agglomeration_factory": "Основной завод промышленной агломерации",
+  "text.autobotany.base_industrial_agglomeration_factory_label_text_1": "Основной завод",
+  "text.autobotany.base_industrial_agglomeration_factory_label_text_2": "промышленной агломерации",
+
+  "block.autobotany.upgraded_industrial_agglomeration_factory": "Улучшенный завод промышленной агломерации",
+  "text.autobotany.upgraded_industrial_agglomeration_factory_label_text_1": "Улучшенный завод",
+  "text.autobotany.upgraded_industrial_agglomeration_factory_label_text_2": "промышленной агломерации",
+
+  "block.autobotany.advanced_industrial_agglomeration_factory": "Продвинутый завод промышленной агломерации",
+  "text.autobotany.advanced_industrial_agglomeration_factory_label_text_1": "Продвинутый завод",
+  "text.autobotany.advanced_industrial_agglomeration_factory_label_text_2": "промышленной агломерации",
+
+  "block.autobotany.ultimate_industrial_agglomeration_factory": "Совершенный завод промышленной агломерации",
+  "text.autobotany.ultimate_industrial_agglomeration_factory_label_text_1": "Совершенный завод",
+  "text.autobotany.ultimate_industrial_agglomeration_factory_label_text_2": "промышленной агломерации",
+
+  "block.autobotany.base_alfheim_market": "Основной обменник альфхейма",
+  "block.autobotany.upgraded_alfheim_market": "Улучшенный обменник альфхейма",
+  "block.autobotany.advanced_alfheim_market": "Продвинутый обменник альфхейма",
+  "block.autobotany.ultimate_alfheim_market": "Совершенный обменник альфхейма",
+
+  "block.autobotany.base_orechid": "Основной Рудноцвет",
+  "block.autobotany.upgraded_orechid": "Улучшенный Рудноцвет",
+  "block.autobotany.advanced_orechid": "Продвинутый Рудноцвет",
+  "block.autobotany.ultimate_orechid": "Совершенный Рудноцвет",
+
+  "block.autobotany.electric_greenhouse": "Электрическая теплица",
+  "block.autobotany.jaded_amaranthus": "Измученный амарант",
+
+  "block.autobotany.malachite_dragonstone_block": "Малахитовый блок дракона",
+  "block.autobotany.saffron_dragonstone_block": "Саффроновый блок дракона",
+  "block.autobotany.shadow_dragonstone_block": "Теневой блок дракона",
+  "block.autobotany.crimson_dragonstone_block": "Алый блок дракона",
+
+  "block.autobotany.malachite_ingot_block": "Малахитовый блок",
+  "block.autobotany.saffron_ingot_block": "Саффроновый блок",
+  "block.autobotany.shadow_ingot_block": "Теневой блок",
+  "block.autobotany.crimson_ingot_block": "Алый блок",
+
+  "item.autobotany.malachite_spark": "Малахитовая искра",
+  "item.autobotany.saffron_spark": "Саффроновая искра",
+  "item.autobotany.shadow_spark": "Теневая искра",
+  "item.autobotany.crimson_spark": "Алая искра",
+
+  "item.autobotany.malachite_dragonstone": "Малахитовый камень дракона",
+  "item.autobotany.saffron_dragonstone": "Саффроновый камень дракона",
+  "item.autobotany.shadow_dragonstone": "Теневой камень дракона",
+  "item.autobotany.crimson_dragonstone": "Алый камень дракона",
+
+  "item.autobotany.malachite_ingot": "Малахитовый слиток",
+  "item.autobotany.saffron_ingot": "Саффроновый слиток",
+  "item.autobotany.shadow_ingot": "Теневой слиток",
+  "item.autobotany.crimson_ingot": "Алый слиток",
+
+  "item.autobotany.manasteel_advanced_alloy": "Композит манастали",
+  "item.autobotany.manasteel_ingot_advanced_alloy": "Сплав манастали",
+  "item.autobotany.elementium_advanced_alloy": "Композит элементия",
+  "item.autobotany.elementium_ingot_advanced_alloy": "Сплав элементия ",
+  "item.autobotany.terrasteel_advanced_alloy": "Композит террастали",
+  "item.autobotany.terrasteel_ingot_advanced_alloy": "Сплав террастали",
+  "item.autobotany.rune_tp": "Руна телепортации",
+  "item.autobotany.rune_energy": "Руна энергии",
+
+
+  "item.autobotany.catalyst_mana_infinity": "Катализатор бесконечной маны",
+  "item.autobotany.catalyst_living_rock_infinity": "Катализатор бесконечного жизнекамня",
+  "item.autobotany.catalyst_water_infinity": "Катализатор бесконечной воды",
+  "item.autobotany.catalyst_seed_infinity": "Катализатор бесконечных семян",
+  "item.autobotany.catalyst_speed": "Катализатор скорости",
+  "item.autobotany.catalyst_stone_infinity": "Катализатор бесконечного камня",
+  "item.autobotany.catalyst_petal": "Катализатор лепестков",
+  "item.autobotany.catalyst_petal_block": "Катализатор блоков лепестков",
+
+  "item.autobotany.module_efficiency": "Модуль теплицы: Эффективность",
+  "item.autobotany.module_speed1": "Базовый модуль теплицы: Скорость",
+  "item.autobotany.module_speed2": "Продвинутый модуль теплицы: Скорость",
+  "item.autobotany.module_speed3": "Ультимативный модуль теплицы: Скорость",
+  "item.autobotany.module_mana_storage1": "Базовый модуль теплицы: Хранилище маны",
+  "item.autobotany.module_mana_storage2": "Продвинутый модуль теплицы: Хранилище маны",
+  "item.autobotany.module_mana_storage3": "Ультимативный модуль теплицы: Хранилище маны",
+  "item.autobotany.module_energy_storage1": "Базовый модуль теплицы: Хранилище энергии",
+  "item.autobotany.module_energy_storage2": "Продвинутый модуль теплицы: Хранилище энергии",
+  "item.autobotany.module_energy_storage3": "Ультимативный модуль теплицы: Хранилище энергии",
+  "item.autobotany.module_recipe_multiplier1": "Базовый модуль теплицы: Расширение",
+  "item.autobotany.module_recipe_multiplier2": "Продвинутый модуль теплицы: Расширение",
+  "item.autobotany.module_recipe_multiplier3": "Ультимативный модуль теплицы: Расширение",
+
+  "autobotany.tooltip.screen.mana": "Мана: %1$s §eМаны / %2$s §eМаны",
+  "autobotany.tooltip.screen.catalyst_slot": "Cлот для катализаторов",
+  "autobotany.tooltip.screen.upgrade_slot": "Cлот для улучшений",
+  "autobotany.tooltip.screen.livingrock_slot": "Cлот для жизнекамня",
+  "autobotany.tooltip.screen.seed_slot": "Cлот для семян",
+  "autobotany.tooltip.screen.ore_slot": "Слот для руды (Фильтр)",
+
+  "autobotany.tooltip.screen.charge": "Заряд: %1$s §eEU / %2$s §eEU",
+  "autobotany.screen.title.consumption": "Потребление: %1$s §eEU/t",
+  "autobotany.screen.title.greenhouse": "Электрическая теплица",
+  "autobotany.screen.title.ticks": "%1$s тиков",
+  "autobotany.tooltip.mana": "Маны: %1$s",
+
+  "autobotany.tooltip.item.mana": "§bТекущая мана: §6 %1$s",
+  "autobotany.tooltip.item.water": "§bТекущая вода:§r §6 %1$s",
+  "autobotany.tooltip.item.upgrade_speed_1": "§6Ускоряет крафт в §d4 раза",
+  "autobotany.tooltip.item.upgrade_speed_2": "§6Только для §cзавода промышленной агломерации"
+}

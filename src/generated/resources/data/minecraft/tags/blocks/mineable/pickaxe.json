@@ -1,12 +1,12 @@
 {
   "values": [
-    "botanicalextramachinery:malachite_dragonstone_block",
-    "botanicalextramachinery:saffron_dragonstone_block",
-    "botanicalextramachinery:shadow_dragonstone_block",
-    "botanicalextramachinery:crimson_dragonstone_block",
-    "botanicalextramachinery:malachite_ingot_block",
-    "botanicalextramachinery:saffron_ingot_block",
-    "botanicalextramachinery:shadow_ingot_block",
-    "botanicalextramachinery:crimson_ingot_block"
+    "autobotany:malachite_dragonstone_block",
+    "autobotany:saffron_dragonstone_block",
+    "autobotany:shadow_dragonstone_block",
+    "autobotany:crimson_dragonstone_block",
+    "autobotany:malachite_ingot_block",
+    "autobotany:saffron_ingot_block",
+    "autobotany:shadow_ingot_block",
+    "autobotany:crimson_ingot_block"
   ]
 }

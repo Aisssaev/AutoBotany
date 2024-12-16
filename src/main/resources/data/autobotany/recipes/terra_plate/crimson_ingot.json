@@ -1,0 +1,27 @@
+{
+  "type": "botania:terra_plate",
+  "ingredients": [
+    {
+      "item": "autobotany:shadow_ingot"
+    },
+    {
+      "item": "botania:gaia_ingot"
+    },
+    {
+      "item": "botania:gaia_ingot"
+    },
+    {
+      "item": "botania:gaia_ingot"
+    },
+    {
+      "item": "botania:gaia_ingot"
+    },
+    {
+      "item": "autobotany:saffron_ingot_block"
+    }
+  ],
+  "mana": 2000000,
+  "result": {
+    "item": "autobotany:crimson_ingot"
+  }
+}
