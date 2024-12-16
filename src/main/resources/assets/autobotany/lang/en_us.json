@@ -81,6 +81,9 @@
   "item.autobotany.elementium_ingot_advanced_alloy": "Elementium Ingot Advanced Alloy",
   "item.autobotany.terrasteel_advanced_alloy": "Terrasteel Advanced Alloy",
   "item.autobotany.terrasteel_ingot_advanced_alloy": "Terrasteel Ingot Advanced Alloy",
+  "item.autobotany.compressed_manasteel_alloy_plate": "Compressed Manasteel Alloy Plate",
+  "item.autobotany.compressed_elementium_alloy_plate": "Compressed Elementium Alloy Plate",
+  "item.autobotany.compressed_terrasteel_alloy_plate": "Compressed Terrasteel Alloy Plate",
   "item.autobotany.rune_tp": "Rune Teleportation",
   "item.autobotany.rune_energy": "Rune Energy",
 

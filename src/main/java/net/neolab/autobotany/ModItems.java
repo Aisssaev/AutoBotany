@@ -64,6 +64,12 @@ public class ModItems {
     public static final Item terrasteelAdvancedAlloy;
     public static final Item terrasteelIngotAdvancedAlloy;
 
+    public static final Item compressedManasteelAlloyPlate;
+    public static final Item compressedElementiumAlloyPlate;
+    public static final Item compressedTerrasteelAlloyPlate;
+
+
+
     public static final Item runeTp;
     public static final Item runeEnergy;
 
@@ -92,6 +98,10 @@ public class ModItems {
         elementiumIngotAdvancedAlloy = new ItemBase(AutoBotany.getInstance(), new Item.Properties());
         terrasteelAdvancedAlloy = new ItemBase(AutoBotany.getInstance(), new Item.Properties());
         terrasteelIngotAdvancedAlloy = new ItemBase(AutoBotany.getInstance(), new Item.Properties());
+
+        compressedManasteelAlloyPlate = new ItemBase(AutoBotany.getInstance(), new Item.Properties());
+        compressedElementiumAlloyPlate = new ItemBase(AutoBotany.getInstance(), new Item.Properties());
+        compressedTerrasteelAlloyPlate = new ItemBase(AutoBotany.getInstance(), new Item.Properties());
 
         catalystManaInfinity = new ItemBase(AutoBotany.getInstance(), new Item.Properties());
         catalystLivingRockInfinity = new ItemBase(AutoBotany.getInstance(), new Item.Properties());

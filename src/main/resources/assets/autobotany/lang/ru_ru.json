@@ -81,6 +81,9 @@
   "item.autobotany.elementium_ingot_advanced_alloy": "Сплав элементия ",
   "item.autobotany.terrasteel_advanced_alloy": "Композит террастали",
   "item.autobotany.terrasteel_ingot_advanced_alloy": "Сплав террастали",
+  "item.autobotany.compressed_manasteel_alloy_plate": "Сжатый композит манастали",
+  "item.autobotany.compressed_elementium_alloy_plate": "Сжатый композит элементия",
+  "item.autobotany.compressed_terrasteel_alloy_plate": "Сжатый композит террастали",
   "item.autobotany.rune_tp": "Руна телепортации",
   "item.autobotany.rune_energy": "Руна энергии",
 
