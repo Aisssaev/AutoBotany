@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "autobotany:item/compressed_manasteel_alloy_plate"
+  }
+}

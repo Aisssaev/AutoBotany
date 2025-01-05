@@ -1,0 +1,13 @@
+{
+  "type": "autobotany:primitive_greenhouse",
+  "consumable_input": {
+    "item": "minecraft:tnt"
+  },
+  "energy_per_tick": 60,
+  "isConsumable": true,
+  "mana_output": 6000,
+  "non_consumable_input": {
+    "item": "botania:entropinnyum"
+  },
+  "ticks": 80
+}

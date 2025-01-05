@@ -1,0 +1,13 @@
+{
+  "type": "autobotany:greenhouse",
+  "consumable_input": {
+    "item": "botania:cell_block"
+  },
+  "energy_per_tick": 5,
+  "isConsumable": true,
+  "mana_output": 25,
+  "non_consumable_input": {
+    "item": "botania:dandelifeon"
+  },
+  "ticks": 1
+}

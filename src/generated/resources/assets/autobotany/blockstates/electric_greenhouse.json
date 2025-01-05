@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "autobotany:block/electric_greenhouse",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "autobotany:block/electric_greenhouse"
+    },
+    "facing=south": {
+      "model": "autobotany:block/electric_greenhouse",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "autobotany:block/electric_greenhouse",
+      "y": 270
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "autobotany:block/advanced_runic_altar",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "autobotany:block/advanced_runic_altar"
+    },
+    "facing=south": {
+      "model": "autobotany:block/advanced_runic_altar",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "autobotany:block/advanced_runic_altar",
+      "y": 270
+    }
+  }
+}

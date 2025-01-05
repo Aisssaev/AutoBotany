@@ -1,0 +1,13 @@
+{
+  "type": "autobotany:primitive_greenhouse",
+  "consumable_input": {
+    "tag": "minecraft:wool"
+  },
+  "energy_per_tick": 150,
+  "isConsumable": true,
+  "mana_output": 1100,
+  "non_consumable_input": {
+    "item": "botania:spectrolus"
+  },
+  "ticks": 4
+}

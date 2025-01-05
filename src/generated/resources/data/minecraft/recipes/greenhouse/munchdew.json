@@ -1,0 +1,13 @@
+{
+  "type": "autobotany:greenhouse",
+  "consumable_input": {
+    "tag": "minecraft:leaves"
+  },
+  "energy_per_tick": 200,
+  "isConsumable": true,
+  "mana_output": 160,
+  "non_consumable_input": {
+    "item": "botania:munchdew"
+  },
+  "ticks": 1
+}

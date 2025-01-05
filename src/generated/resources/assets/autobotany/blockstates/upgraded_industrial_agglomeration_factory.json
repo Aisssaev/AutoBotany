@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "autobotany:block/upgraded_industrial_agglomeration_factory",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "autobotany:block/upgraded_industrial_agglomeration_factory"
+    },
+    "facing=south": {
+      "model": "autobotany:block/upgraded_industrial_agglomeration_factory",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "autobotany:block/upgraded_industrial_agglomeration_factory",
+      "y": 270
+    }
+  }
+}

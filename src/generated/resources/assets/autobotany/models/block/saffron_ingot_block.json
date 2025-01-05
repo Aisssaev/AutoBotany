@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "autobotany:block/saffron_ingot_block"
+  }
+}

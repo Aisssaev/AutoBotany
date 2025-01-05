@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "autobotany:block/base_apothecary",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "autobotany:block/base_apothecary"
+    },
+    "facing=south": {
+      "model": "autobotany:block/base_apothecary",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "autobotany:block/base_apothecary",
+      "y": 270
+    }
+  }
+}

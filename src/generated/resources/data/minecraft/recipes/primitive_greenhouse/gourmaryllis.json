@@ -1,0 +1,13 @@
+{
+  "type": "autobotany:primitive_greenhouse",
+  "consumable_input": {
+    "tag": "autobotany:food"
+  },
+  "energy_per_tick": 30,
+  "isConsumable": true,
+  "mana_output": 3900,
+  "non_consumable_input": {
+    "item": "botania:gourmaryllis"
+  },
+  "ticks": 60
+}

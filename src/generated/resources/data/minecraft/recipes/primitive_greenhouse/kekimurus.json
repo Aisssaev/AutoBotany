@@ -1,0 +1,13 @@
+{
+  "type": "autobotany:primitive_greenhouse",
+  "consumable_input": {
+    "item": "minecraft:cake"
+  },
+  "energy_per_tick": 40,
+  "isConsumable": true,
+  "mana_output": 15600,
+  "non_consumable_input": {
+    "item": "botania:kekimurus"
+  },
+  "ticks": 640
+}

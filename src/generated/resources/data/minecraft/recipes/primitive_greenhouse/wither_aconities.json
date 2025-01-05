@@ -1,0 +1,13 @@
+{
+  "type": "autobotany:primitive_greenhouse",
+  "consumable_input": {
+    "item": "minecraft:nether_star"
+  },
+  "energy_per_tick": 1000,
+  "isConsumable": true,
+  "mana_output": 1248000,
+  "non_consumable_input": {
+    "item": "mythicbotany:wither_aconite"
+  },
+  "ticks": 2400
+}

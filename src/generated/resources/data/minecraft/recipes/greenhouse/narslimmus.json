@@ -1,0 +1,13 @@
+{
+  "type": "autobotany:greenhouse",
+  "consumable_input": {
+    "item": "minecraft:slime_ball"
+  },
+  "energy_per_tick": 50,
+  "isConsumable": true,
+  "mana_output": 3600,
+  "non_consumable_input": {
+    "item": "botania:narslimmus"
+  },
+  "ticks": 100
+}
