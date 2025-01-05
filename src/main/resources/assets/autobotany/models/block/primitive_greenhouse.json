@@ -1,0 +1,10 @@
+{
+  "parent": "block/orientable",
+  "textures": {
+    "particle": "autobotany:block/primitive_greenhouse/side",
+    "side": "autobotany:block/primitive_greenhouse/side",
+    "top": "autobotany:block/primitive_greenhouse/top",
+    "front": "autobotany:block/primitive_greenhouse/side",
+    "bottom": "autobotany:block/primitive_greenhouse/bottom"
+  }
+}

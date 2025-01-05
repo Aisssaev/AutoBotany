@@ -3,10 +3,10 @@
   "render_type": "cutout",
   "ambientocclusion": false,
   "textures": {
-    "plate": "autobotany:block/crystal_dragonstone_block",
+    "plate": "autobotany:block/crimson_dragonstone_block",
     "grass_top": "botania:block/enchanted_soil_top",
     "grass_side": "botania:block/enchanted_soil_side",
-    "flower": "botania:block/orechid",
+    "flower": "botania:block/jaded_amaranthus",
     "particle": "#plate"
   },
   "elements": [

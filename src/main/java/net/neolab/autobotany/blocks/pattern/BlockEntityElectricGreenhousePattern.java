@@ -63,7 +63,7 @@ public class BlockEntityElectricGreenhousePattern extends ElectricBotanicalTile 
     private final int[] progress;
     private final int[] maxProgress;
     private final boolean[] activeRecipes;
-    public int energyConsume = 0;
+    public int  energyConsume = 0;
     public int currentEnergy;
     public double efficiencyMultiplier = 1.0;
     protected GreenhouseRecipe[] recipe;
@@ -203,7 +203,7 @@ public class BlockEntityElectricGreenhousePattern extends ElectricBotanicalTile 
         if (this.getCurrentMana() > this.getMaxMana()){
             this.mana = this.getMaxMana();
         }
-        this.energyConsume = Math.max(energyConsume, this.energyConsume);
+        this.energyConsume = Math.max(energyConsume, Math.max(this.energyConsume, 500));
         this.efficiencyMultiplier = efficiencyMultiplier;
         for (int i = 0; i < maxProgress.length; i++) {
             if (recipe[i] != null && maxProgress[i] == recipe[i].getTicks()) {
@@ -246,7 +246,7 @@ public class BlockEntityElectricGreenhousePattern extends ElectricBotanicalTile 
                 for (int i = 0; i <= LAST_NONCONS_INPUT_SLOT; i++) {
                     if (!inventory.getStackInSlot(i).isEmpty()) {
                         var nutrition = 1;
-                        if (this.hasRecipe(i) && !this.activeRecipes[i]) {
+                        if (this.hasRecipe(i) && !this.activeRecipes[i] && hasEnergy(getRecipe(i).getEnergyPerTick())) {
                             progress[i]++;
                             this.recipe[i] = getRecipe(i);
                             maxProgress[i] = recipe[i].getTicks();
@@ -261,7 +261,7 @@ public class BlockEntityElectricGreenhousePattern extends ElectricBotanicalTile 
                             }
                             currentConsumption = useEnergy(recipe[i].getEnergyPerTick() + energyConsume * currentMultiplier[i]);
                             addMana((int) (recipe[i].getManaOutput()*efficiencyMultiplier/maxProgress[i]) * currentMultiplier[i] * nutrition * nutrition);
-                        } else if (this.activeRecipes[i]) {
+                        } else if (this.activeRecipes[i] && hasEnergy(recipe[i].getEnergyPerTick())) {
                             this.progress[i]++;
                             currentConsumption = useEnergy(recipe[i].getEnergyPerTick() + energyConsume * currentMultiplier[i]);
                             addMana((int) (recipe[i].getManaOutput()*efficiencyMultiplier/maxProgress[i]) * currentMultiplier[i] * nutrition * nutrition);
@@ -373,6 +373,14 @@ public class BlockEntityElectricGreenhousePattern extends ElectricBotanicalTile 
     }
 
     @Override
+    public void setRemoved() {
+        if (this.getMainNode() != null) {
+            this.getMainNode().destroy();
+        }
+        super.setRemoved();
+    }
+
+    @Override
     public AECableType getCableConnectionType(Direction dir) {
         return AECableType.SMART;
     }
@@ -425,14 +433,6 @@ public class BlockEntityElectricGreenhousePattern extends ElectricBotanicalTile 
 //            this.mana -= changed;
 //        }
 
-    }
-
-    private static final Map<ResourceLocation, GreenhouseRecipe> greenhouseRecipes = new HashMap<>();
-
-    public static void loadRecipes(RecipeManager recipeManager) {
-        recipeManager.getAllRecipesFor(GreenhouseRecipe.Type.INSTANCE).forEach(recipe ->
-                greenhouseRecipes.put(recipe.getId(), recipe)
-        );
     }
 
     //TODO: Сделать сохранение прогресса и рецептов

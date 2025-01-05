@@ -57,5 +57,6 @@ public class BlockStates extends BlockStateProviderBase {
 
         this.manualModel(ModBlocks.electricGreenhouse);
         this.manualModel(ModBlocks.jadedAmaranthus);
+        this.manualModel(ModBlocks.primitiveGreenhouse);
     }
 }

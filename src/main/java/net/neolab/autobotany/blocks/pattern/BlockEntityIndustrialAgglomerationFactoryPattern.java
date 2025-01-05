@@ -1,10 +1,7 @@
 package net.neolab.autobotany.blocks.pattern;
 
 import appeng.api.config.Actionable;
-import appeng.api.networking.GridHelper;
-import appeng.api.networking.IGridNode;
-import appeng.api.networking.IInWorldGridNodeHost;
-import appeng.api.networking.IManagedGridNode;
+import appeng.api.networking.*;
 import appeng.api.networking.security.IActionSource;
 import appeng.api.stacks.AEItemKey;
 import appeng.api.util.AECableType;
@@ -80,7 +77,7 @@ public class BlockEntityIndustrialAgglomerationFactoryPattern extends WorkingTil
         if (UPGRADE_SLOT_1 != -1 && UPGRADE_SLOT_2 != -1){
             this.inventory = BaseItemStackHandler.builder(LAST_OUTPUT_SLOT + 1)
                     .validator((stack) -> { return this.level != null && RecipeHelper.isItemValidInput(this.level.getRecipeManager(), BotaniaRecipeTypes.TERRA_PLATE_TYPE, stack);}, Range.closedOpen(FIRST_INPUT_SLOT, LAST_INPUT_SLOT + 1))
-                    .validator((stack) -> {return (stack.getItem() == ModItems.catalystSpeed.asItem() || stack.getItem() == ModItems.catalystManaInfinity.asItem());}, UPGRADE_SLOT_1, UPGRADE_SLOT_2)
+                    .validator((stack) -> {return (stack.getItem() == ModItems.moduleSpeed.asItem() || stack.getItem() == ModItems.moduleManaInfinity.asItem());}, UPGRADE_SLOT_1, UPGRADE_SLOT_2)
                     .output(Range.closedOpen(FIRST_OUTPUT_SLOT, LAST_OUTPUT_SLOT + 1))
                     .slotLimit(1, UPGRADE_SLOT_1, UPGRADE_SLOT_2)
                     .contentsChanged(() -> { this.setChanged();this.setDispatchable();this.needsRecipeUpdate();})
@@ -119,14 +116,17 @@ public class BlockEntityIndustrialAgglomerationFactoryPattern extends WorkingTil
             }
 
             if (this.getMaxMana() != this.getCurrentMana() && (
-                    (UPGRADE_SLOT_1 != -1 && this.inventory.getStackInSlot(UPGRADE_SLOT_1).getItem().asItem() == ModItems.catalystManaInfinity)||
-                    (UPGRADE_SLOT_2 != -1 && this.inventory.getStackInSlot(UPGRADE_SLOT_2).getItem().asItem() == ModItems.catalystManaInfinity))){
+                    (UPGRADE_SLOT_1 != -1 && this.inventory.getStackInSlot(UPGRADE_SLOT_1).getItem().asItem() == ModItems.moduleManaInfinity)||
+                    (UPGRADE_SLOT_2 != -1 && this.inventory.getStackInSlot(UPGRADE_SLOT_2).getItem().asItem() == ModItems.moduleManaInfinity))){
+                actAsMana = false;
                 this.receiveMana(this.getMaxMana());
+            } else {
+                actAsMana = true;
             }
 
             if (this.speedMulti == 1 && (
-                    (UPGRADE_SLOT_1 != -1 && this.inventory.getStackInSlot(UPGRADE_SLOT_1).getItem().asItem() == ModItems.catalystSpeed)||
-                            (UPGRADE_SLOT_2 != -1 && this.inventory.getStackInSlot(UPGRADE_SLOT_2).getItem().asItem() == ModItems.catalystSpeed))){
+                    (UPGRADE_SLOT_1 != -1 && this.inventory.getStackInSlot(UPGRADE_SLOT_1).getItem().asItem() == ModItems.moduleSpeed)||
+                            (UPGRADE_SLOT_2 != -1 && this.inventory.getStackInSlot(UPGRADE_SLOT_2).getItem().asItem() == ModItems.moduleSpeed))){
                 this.speedMulti = 4;
             } else{
                 this.speedMulti = 1;

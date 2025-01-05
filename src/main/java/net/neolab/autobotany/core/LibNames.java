@@ -37,6 +37,7 @@ public class LibNames {
 
     public static final String ELECTRIC_GREENHOUSE = "electric_greenhouse";
     public static final String JADED_AMARANTHUS = "jaded_amaranthus";
+    public static final String PRIMITIVE_GREENHOUSE = "primitive_greenhouse";
 
     public static final String BASE_MECHANICAL_MANA_POOL = "base_mechanical_mana_pool";
     public static final String UPGRADED_MECHANICAL_MANA_POOL = "upgraded_mechanical_mana_pool";

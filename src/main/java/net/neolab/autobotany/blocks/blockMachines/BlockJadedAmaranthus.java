@@ -1,11 +1,15 @@
 package net.neolab.autobotany.blocks.blockMachines;
 
 
+import net.minecraft.ChatFormatting;
 import net.minecraft.client.gui.screens.MenuScreens;
 import net.minecraft.client.renderer.blockentity.BlockEntityRenderers;
 import net.minecraft.core.BlockPos;
+import net.minecraft.network.chat.Component;
 import net.minecraft.world.inventory.MenuType;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.material.Material;
@@ -21,12 +25,14 @@ import net.neolab.autobotany.blocks.containers.ContainerJadedAmaranthus;
 import net.neolab.autobotany.blocks.screens.ScreenJadedAmaranthus;
 import net.neolab.autobotany.blocks.tesr.RenderJadedAmaranthus;
 import net.neolab.autobotany.blocks.tiles.BlockEntityJadedAmaranthus;
+import org.jetbrains.annotations.Nullable;
 import org.moddingx.libx.base.tile.MenuBlockBE;
 import org.moddingx.libx.mod.ModX;
 import org.moddingx.libx.registration.SetupContext;
 import org.moddingx.libx.render.ItemStackRenderer;
 
 import javax.annotation.Nonnull;
+import java.util.List;
 import java.util.function.Consumer;
 
 public class BlockJadedAmaranthus extends MenuBlockBE<BlockEntityJadedAmaranthus, ContainerJadedAmaranthus> {
@@ -78,5 +84,10 @@ public class BlockJadedAmaranthus extends MenuBlockBE<BlockEntityJadedAmaranthus
     static {
         COLLISION_SHAPE = Shapes.joinUnoptimized(box(0.0, 0.0, 0.0, 16.0, 2.0, 16.0), box(5.0, 2.0, 5.0, 11.0, 3.0, 11.0), BooleanOp.OR);
         SHAPE = box(0.0, 0.0, 0.0, 16.0, 11.4, 16.0);
+    }
+
+    @Override
+    public void appendHoverText(ItemStack stack, @Nullable BlockGetter getter, List<Component> tooltip, TooltipFlag flag) {
+        tooltip.add(Component.literal("§6[!] §aБлок ломается киркой"));
     }
 }

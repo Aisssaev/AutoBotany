@@ -86,7 +86,7 @@ public class BlockEntityAlfheimMarketPattern extends WorkingTile<ElvenTradeRecip
         if (UPGRADE_SLOT != -1) {
             this.inventory = BaseItemStackHandler.builder(LAST_OUTPUT_SLOT + 1)
                     .validator( (stack) -> {return this.level != null && RecipeHelper.isItemValidInput(this.level.getRecipeManager(), BotaniaRecipeTypes.ELVEN_TRADE_TYPE, stack);}, Range.closedOpen(FIRST_INPUT_SLOT, LAST_INPUT_SLOT + 1))
-                    .validator( (stack) -> {return stack.getItem() == ModItems.catalystManaInfinity.asItem(); }, UPGRADE_SLOT)
+                    .validator( (stack) -> {return stack.getItem() == ModItems.moduleManaInfinity.asItem(); }, UPGRADE_SLOT)
                     .slotLimit(1, UPGRADE_SLOT)
                     .output(Range.closedOpen(FIRST_OUTPUT_SLOT, LAST_OUTPUT_SLOT + 1))
                     .contentsChanged(() -> {this.setChanged(); this.setDispatchable(); this.needsRecipeUpdate();})
@@ -113,7 +113,7 @@ public class BlockEntityAlfheimMarketPattern extends WorkingTile<ElvenTradeRecip
             }
 
             if (this.getMaxMana() != this.getCurrentMana() &&
-                    UPGRADE_SLOT != -1 && this.inventory.getStackInSlot(UPGRADE_SLOT).getItem().asItem() == ModItems.catalystManaInfinity){
+                    UPGRADE_SLOT != -1 && this.inventory.getStackInSlot(UPGRADE_SLOT).getItem().asItem() == ModItems.moduleManaInfinity){
                 this.receiveMana(this.getMaxMana());
             }
 

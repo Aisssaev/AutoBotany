@@ -23,6 +23,7 @@ public class LibResources {
 
     public static final ResourceLocation ELECTRIC_GREENHOUSE_GUI = gui(LibNames.ELECTRIC_GREENHOUSE);
     public static final ResourceLocation JADED_AMARANTHUS_GUI = gui(LibNames.JADED_AMARANTHUS);
+    public static final ResourceLocation PRIMITIVE_GREENHOUSE_GUI = gui(LibNames.PRIMITIVE_GREENHOUSE);
 
     public static final ResourceLocation BASE_MECHANICAL_MANA_POOL_GUI = gui(LibNames.BASE_MECHANICAL_MANA_POOL);
     public static final ResourceLocation UPGRADED_MECHANICAL_MANA_POOL_GUI = gui(LibNames.UPGRADED_MECHANICAL_MANA_POOL);

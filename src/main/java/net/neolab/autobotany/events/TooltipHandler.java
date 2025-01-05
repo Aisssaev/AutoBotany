@@ -81,7 +81,7 @@ public class TooltipHandler {
             }
         }
 
-        if (stack.getItem().asItem() == ModItems.catalystSpeed.asItem()){
+        if (stack.getItem().asItem() == ModItems.moduleSpeed.asItem()){
             event.getToolTip().add(Component.translatable("autobotany.tooltip.item.upgrade_speed_1"));
             event.getToolTip().add(Component.translatable("autobotany.tooltip.item.upgrade_speed_2"));
         }

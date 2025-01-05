@@ -7,6 +7,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.neolab.autobotany.AutoBotany;
 import net.neolab.autobotany.crafting.GreenhouseRecipe;
+import net.neolab.autobotany.crafting.PrimitiveGreenhouseRecipe;
 
 public class ModRecipes {
     public static final DeferredRegister<RecipeSerializer<?>> SERIALIZERS =
@@ -14,6 +15,9 @@ public class ModRecipes {
 
     public static final RegistryObject<RecipeSerializer<GreenhouseRecipe>> GREENHOUSE_RECIPE_SERIALIZER =
             SERIALIZERS.register("greenhouse", () -> GreenhouseRecipe.Serializer.INSTANCE);
+
+    public static final RegistryObject<RecipeSerializer<PrimitiveGreenhouseRecipe>> PRIMITIVE_GREENHOUSE_RECIPE_SERIALIZER =
+            SERIALIZERS.register("primitive_greenhouse", () -> PrimitiveGreenhouseRecipe.Serializer.INSTANCE);
     public static void register(IEventBus bus) {
         SERIALIZERS.register(bus);
     }

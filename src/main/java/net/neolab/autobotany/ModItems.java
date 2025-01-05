@@ -1,5 +1,7 @@
 package net.neolab.autobotany;
 
+import net.minecraft.network.chat.Component;
+import net.neolab.autobotany.Items.ItemBaseAdvanced;
 import net.neolab.autobotany.Items.spark.ItemCrimsonManaSpark;
 import net.neolab.autobotany.Items.spark.ItemMalachiteManaSpark;
 import net.neolab.autobotany.Items.spark.ItemSaffronManaSpark;
@@ -8,6 +10,8 @@ import net.minecraft.world.item.Item;
 import net.neolab.autobotany.Items.upgrades.greenhouse.*;
 import org.moddingx.libx.annotation.registration.RegisterClass;
 import org.moddingx.libx.base.ItemBase;
+
+import java.util.List;
 
 
 @RegisterClass(registry = "ITEMS", priority = 1)
@@ -25,14 +29,14 @@ public class ModItems {
     public static final Item crimsonDragonstone;
     public static final Item crimsonIngot;
 
-    public static final Item catalystManaInfinity;
-    public static final Item catalystLivingRockInfinity;
-    public static final Item catalystWaterInfinity;
-    public static final Item catalystSeedInfinity;
-    public static final Item catalystSpeed;
-    public static final Item catalystStoneInfinity;
-    public static final Item catalystPetal;
-    public static final Item catalystPetalBlock;
+    public static final Item moduleManaInfinity;
+    public static final Item moduleLivingRockInfinity;
+    public static final Item moduleWaterInfinity;
+    public static final Item moduleSeedInfinity;
+    public static final Item moduleSpeed;
+    public static final Item moduleStoneInfinity;
+    public static final Item modulePetal;
+    public static final Item modulePetalBlock;
 
     public static final Item moduleEfficiency;
 
@@ -103,14 +107,14 @@ public class ModItems {
         compressedElementiumAlloyPlate = new ItemBase(AutoBotany.getInstance(), new Item.Properties());
         compressedTerrasteelAlloyPlate = new ItemBase(AutoBotany.getInstance(), new Item.Properties());
 
-        catalystManaInfinity = new ItemBase(AutoBotany.getInstance(), new Item.Properties());
-        catalystLivingRockInfinity = new ItemBase(AutoBotany.getInstance(), new Item.Properties());
-        catalystWaterInfinity = new ItemBase(AutoBotany.getInstance(), new Item.Properties());
-        catalystSeedInfinity = new ItemBase(AutoBotany.getInstance(), new Item.Properties());
-        catalystSpeed = new ItemBase(AutoBotany.getInstance(), new Item.Properties());
-        catalystStoneInfinity = new ItemBase(AutoBotany.getInstance(), new Item.Properties());
-        catalystPetal = new ItemBase(AutoBotany.getInstance(), new Item.Properties());
-        catalystPetalBlock = new ItemBase(AutoBotany.getInstance(), new Item.Properties());
+        moduleManaInfinity = new ItemBaseAdvanced(AutoBotany.getInstance(), new Item.Properties(), List.of(Component.literal("§6[!] §aМожет быть установлен в любой механизм AutoBotany где используется мана. Бесконечно генерирует ману внутри механизма.")));
+        moduleLivingRockInfinity = new ItemBaseAdvanced(AutoBotany.getInstance(), new Item.Properties(), List.of(Component.literal("§6[!] §aИспользуется в механическом руническом алтаре. Бесконечно добавляет жизнекамень в соответствующий слот")));
+        moduleWaterInfinity = new ItemBaseAdvanced(AutoBotany.getInstance(), new Item.Properties(), List.of(Component.literal("§6[!] §aИспользуется в механическом аптекаре. Генерирует воду в механизме. ")));
+        moduleSeedInfinity = new ItemBaseAdvanced(AutoBotany.getInstance(), new Item.Properties(), List.of(Component.literal("§6[!] §aИспользуется в механическом аптекаре. Бесконечно добавляет семена в соответствующий слот.")));
+        moduleSpeed = new ItemBase(AutoBotany.getInstance(), new Item.Properties());
+        moduleStoneInfinity = new ItemBaseAdvanced(AutoBotany.getInstance(), new Item.Properties(), List.of(Component.literal("§6[!] §aИспользуется в механическом Рудноцвете. Бесконечно генерирует камень в соответствующий слот,  что исключает необходимость поставлять его извне. ")));
+        modulePetal = new ItemBaseAdvanced(AutoBotany.getInstance(), new Item.Properties(), List.of(Component.literal("§6[!] §aИспользуется в механизме \"Измученный амарант\". Производит вместо мистических цветов их лепестки.")));
+        modulePetalBlock = new ItemBaseAdvanced(AutoBotany.getInstance(), new Item.Properties(), List.of(Component.literal("§6[!] §aИспользуется в механизме \"Измученный амарант\". Производит вместо мистических цветов блок его лепестков.")));
 
         moduleEfficiency = new EfficiencyUpgradeItem(AutoBotany.getInstance(), new Item.Properties());
 
@@ -118,9 +122,9 @@ public class ModItems {
         moduleSpeed2 = new BaseSpeedUpgradeItem(AutoBotany.getInstance(), new Item.Properties(), 0.7, 3000);
         moduleSpeed3 = new BaseSpeedUpgradeItem(AutoBotany.getInstance(), new Item.Properties(), 0.5, 5000);
 
-        moduleManaStorage1 = new BaseManaStorageUpgradeItem(AutoBotany.getInstance(), new Item.Properties(), 1000000);
-        moduleManaStorage2 = new BaseManaStorageUpgradeItem(AutoBotany.getInstance(), new Item.Properties(), 10000000);
-        moduleManaStorage3 = new BaseManaStorageUpgradeItem(AutoBotany.getInstance(), new Item.Properties(), 100000000);
+        moduleManaStorage1 = new BaseManaStorageUpgradeItem(AutoBotany.getInstance(), new Item.Properties(), 10000000);
+        moduleManaStorage2 = new BaseManaStorageUpgradeItem(AutoBotany.getInstance(), new Item.Properties(), 100000000);
+        moduleManaStorage3 = new BaseManaStorageUpgradeItem(AutoBotany.getInstance(), new Item.Properties(), 1000000000);
 
         moduleEnergyStorage1 = new BaseEnergyStorageUpgradeItem(AutoBotany.getInstance(), new Item.Properties(), 1000000);
         moduleEnergyStorage2 = new BaseEnergyStorageUpgradeItem(AutoBotany.getInstance(), new Item.Properties(), 10000000);

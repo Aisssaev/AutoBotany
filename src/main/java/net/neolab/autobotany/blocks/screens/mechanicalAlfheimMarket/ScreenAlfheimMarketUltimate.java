@@ -45,7 +45,7 @@ public class ScreenAlfheimMarketUltimate extends ExtraScreenBase<ContainerAlfhei
 
         if (blockEntity.getInventory().getStackInSlot(0).isEmpty() && this.minecraft != null){
             List<ItemStack> items = new ArrayList<>();
-            items.add(new ItemStack(ModItems.catalystManaInfinity));
+            items.add(new ItemStack(ModItems.moduleManaInfinity));
 
             GhostItemRenderer.renderGhostItem(items, poseStack, this.leftPos + 84 , this.topPos + 87);
         }

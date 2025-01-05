@@ -42,7 +42,7 @@ public class ScreenManaPoolUltimate extends ExtraScreenBase<ContainerManaPoolUlt
         }
         if (blockEntity.getInventory().getStackInSlot(1).isEmpty() && this.minecraft != null){
             List<ItemStack> items = new ArrayList<>();
-            items.add(new ItemStack(ModItems.catalystManaInfinity));
+            items.add(new ItemStack(ModItems.moduleManaInfinity));
 
             GhostItemRenderer.renderGhostItem(items, poseStack, this.leftPos + 80, this.topPos + 19);
         }

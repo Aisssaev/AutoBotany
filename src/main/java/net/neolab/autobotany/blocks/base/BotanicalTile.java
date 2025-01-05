@@ -49,6 +49,7 @@ public abstract class BotanicalTile extends BlockEntityBase implements ManaPool,
     private final int manaCap;
     private String inputKey = "";
     private String outputKey = "";
+    public boolean actAsMana = true;
     private final LazyOptional<IAdvancedItemHandlerModifiable> capability = this.createCap(this::getInventory);
 
     public BotanicalTile(BlockEntityType<?> blockEntityTypeIn, BlockPos pos, BlockState state, int manaCap) {
@@ -77,6 +78,16 @@ public abstract class BotanicalTile extends BlockEntityBase implements ManaPool,
             this.level.updateNeighbourForOutputSignal(this.worldPosition, this.getBlockState().getBlock());
         }
 
+    }
+
+    @Override
+    public boolean isOutputtingPower() {
+        return true;
+    }
+
+    @Override
+    public boolean canReceiveManaFromBursts() {
+        return true;
     }
 
     @Nonnull
@@ -211,20 +222,12 @@ public abstract class BotanicalTile extends BlockEntityBase implements ManaPool,
 
     }
 
-    public boolean canReceiveManaFromBursts() {
-        return true;
-    }
-
     public int getCurrentMana() {
         return this.mana;
     }
 
     public int getMaxMana() {
         return this.manaCap;
-    }
-
-    public boolean isOutputtingPower() {
-        return false;
     }
 
     public Optional<DyeColor> getColor() {
@@ -247,6 +250,6 @@ public abstract class BotanicalTile extends BlockEntityBase implements ManaPool,
     }
 
     public boolean actAsMana() {
-        return true;
+        return actAsMana;
     }
 }

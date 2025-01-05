@@ -1,7 +1,12 @@
 package net.neolab.autobotany;
 
+import net.minecraft.core.Registry;
+import net.minecraftforge.registries.DeferredRegister;
+import net.minecraftforge.registries.ForgeRegistries;
+import net.minecraftforge.registries.RegistryObject;
 import net.neolab.autobotany.blocks.blockMachines.BlockElectricGreenhouse;
 import net.neolab.autobotany.blocks.blockMachines.BlockJadedAmaranthus;
+import net.neolab.autobotany.blocks.blockMachines.BlockPrimitiveGreenhouse;
 import net.neolab.autobotany.blocks.blockMachines.mechanicalAlfheimMarket.BlockAlfheimMarketAdvanced;
 import net.neolab.autobotany.blocks.blockMachines.mechanicalAlfheimMarket.BlockAlfheimMarketBase;
 import net.neolab.autobotany.blocks.blockMachines.mechanicalAlfheimMarket.BlockAlfheimMarketUltimate;
@@ -32,6 +37,7 @@ import net.neolab.autobotany.blocks.blockMachines.mechanicalRunicAltar.BlockRuni
 import net.neolab.autobotany.blocks.blockMachines.mechanicalRunicAltar.BlockRunicAltarUpgraded;
 import net.neolab.autobotany.blocks.containers.ContainerElectricGreenhouse;
 import net.neolab.autobotany.blocks.containers.ContainerJadedAmaranthus;
+import net.neolab.autobotany.blocks.containers.ContainerPrimitiveGreenhouse;
 import net.neolab.autobotany.blocks.containers.mechanicalAlfheimMarket.ContainerAlfheimMarketAdvanced;
 import net.neolab.autobotany.blocks.containers.mechanicalAlfheimMarket.ContainerAlfheimMarketBase;
 import net.neolab.autobotany.blocks.containers.mechanicalAlfheimMarket.ContainerAlfheimMarketUltimate;
@@ -62,6 +68,7 @@ import net.neolab.autobotany.blocks.containers.mechanicalRunicAltar.ContainerRun
 import net.neolab.autobotany.blocks.containers.mechanicalRunicAltar.ContainerRunicAltarUpgraded;
 import net.neolab.autobotany.blocks.tiles.BlockEntityElectricGreenhouseBase;
 import net.neolab.autobotany.blocks.tiles.BlockEntityJadedAmaranthus;
+import net.neolab.autobotany.blocks.tiles.BlockEntityPrimitiveGreenhouse;
 import net.neolab.autobotany.blocks.tiles.mechanicalAlfheimMarket.BlockEntityAlfheimMarketAdvanced;
 import net.neolab.autobotany.blocks.tiles.mechanicalAlfheimMarket.BlockEntityAlfheimMarketBase;
 import net.neolab.autobotany.blocks.tiles.mechanicalAlfheimMarket.BlockEntityAlfheimMarketUltimate;
@@ -98,6 +105,9 @@ import org.moddingx.libx.base.BlockBase;
 import org.moddingx.libx.base.tile.MenuBlockBE;
 import org.moddingx.libx.menu.BlockEntityMenu;
 
+import java.util.ArrayList;
+import java.util.List;
+
 @RegisterClass(registry = "BLOCKS", priority = 1)
 public class ModBlocks {
     public static final BlockBase malachiteDragonstoneBlock;
@@ -116,6 +126,7 @@ public class ModBlocks {
 
     public static final MenuBlockBE<BlockEntityElectricGreenhouseBase, ContainerElectricGreenhouse> electricGreenhouse;
     public static final MenuBlockBE<BlockEntityJadedAmaranthus, ContainerJadedAmaranthus> jadedAmaranthus;
+    public static final MenuBlockBE<BlockEntityPrimitiveGreenhouse, ContainerPrimitiveGreenhouse> primitiveGreenhouse;
 
     public static final MenuBlockBE<BlockEntityRunicAltarBase, ContainerRunicAltarBase> baseRunicAltar;
     public static final MenuBlockBE<BlockEntityRunicAltarUpgraded, ContainerRunicAltarUpgraded> upgradedRunicAltar;
@@ -147,6 +158,16 @@ public class ModBlocks {
     public static final MenuBlockBE<BlockEntityOrechidAdvanced, ContainerOrechidAdvanced> advancedOrechid;
     public static final MenuBlockBE<BlockEntityOrechidUltimate, ContainerOrechidUltimate> ultimateOrechid;
 
+    public static List<BlockBase> getAllBlocksMachine() {
+        //return List.of(electricGreenhouse, jadedAmaranthus, baseManaPool)
+        var list = new ArrayList<BlockBase>();
+        for (var block : ForgeRegistries.BLOCKS) {
+            if (block instanceof BlockBase) {
+                list.add((BlockBase) block);
+            }
+        }
+        return list;
+    }
 
     public ModBlocks() {
     }
@@ -159,6 +180,7 @@ public class ModBlocks {
 
         electricGreenhouse = new BlockElectricGreenhouse(AutoBotany.getInstance(), BlockEntityElectricGreenhouseBase.class, BlockEntityMenu.createMenuType(ContainerElectricGreenhouse::new));
         jadedAmaranthus = new BlockJadedAmaranthus(AutoBotany.getInstance(), BlockEntityJadedAmaranthus.class, BlockEntityMenu.createMenuType(ContainerJadedAmaranthus::new));
+        primitiveGreenhouse = new BlockPrimitiveGreenhouse(AutoBotany.getInstance(), BlockEntityPrimitiveGreenhouse.class, BlockEntityMenu.createMenuType(ContainerPrimitiveGreenhouse::new));
 
         malachiteIngotBlock = new BlockBase(AutoBotany.getInstance(), BlockBehaviour.Properties.of(Material.METAL).strength(5.0F, 6.0F).sound(SoundType.METAL));
         saffronIngotBlock = new BlockBase(AutoBotany.getInstance(), BlockBehaviour.Properties.of(Material.METAL).strength(5.0F, 6.0F).sound(SoundType.METAL));

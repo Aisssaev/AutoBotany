@@ -1,15 +1,18 @@
 package net.neolab.autobotany.blocks.base;
 
+import java.util.List;
 import java.util.function.Consumer;
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.nbt.CompoundTag;
+import net.minecraft.network.chat.Component;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.inventory.MenuType;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.Level;
@@ -103,5 +106,10 @@ public abstract class BotanicalBlock<T extends BotanicalTile, C extends BlockEnt
 
     protected boolean shouldDropInventory(Level level, BlockPos pos, BlockState state) {
         return false;
+    }
+
+    @Override
+    public void appendHoverText(ItemStack stack, @org.jetbrains.annotations.Nullable BlockGetter getter, List<Component> tooltip, TooltipFlag flag) {
+        tooltip.add(Component.literal("§6[!] §aБлок ломается киркой"));
     }
 }

@@ -7,9 +7,10 @@ import mezz.jei.api.registration.IRecipeCatalystRegistration;
 import mezz.jei.api.registration.IRecipeCategoryRegistration;
 import mezz.jei.api.registration.IRecipeRegistration;
 import net.minecraft.client.Minecraft;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.item.ItemStack;
 import net.neolab.autobotany.AutoBotany;
 import net.neolab.autobotany.ModBlocks;
-import net.neolab.autobotany.blocks.screens.ScreenElectricGreenhouse;
 import net.neolab.autobotany.blocks.screens.mechanicalAlfheimMarket.ScreenAlfheimMarketAdvanced;
 import net.neolab.autobotany.blocks.screens.mechanicalAlfheimMarket.ScreenAlfheimMarketBase;
 import net.neolab.autobotany.blocks.screens.mechanicalAlfheimMarket.ScreenAlfheimMarketUltimate;
@@ -38,10 +39,10 @@ import net.neolab.autobotany.blocks.screens.mechanicalRunicAltar.ScreenRunicAlta
 import net.neolab.autobotany.blocks.screens.mechanicalRunicAltar.ScreenRunicAltarBase;
 import net.neolab.autobotany.blocks.screens.mechanicalRunicAltar.ScreenRunicAltarUltimate;
 import net.neolab.autobotany.blocks.screens.mechanicalRunicAltar.ScreenRunicAltarUpgraded;
-import net.minecraft.resources.ResourceLocation;
-import net.minecraft.world.item.ItemStack;
 import net.neolab.autobotany.compat.category.GreenhouseRecipeCategory;
+import net.neolab.autobotany.compat.category.PrimitiveGreenhouseRecipeCategory;
 import net.neolab.autobotany.crafting.GreenhouseRecipe;
+import net.neolab.autobotany.crafting.PrimitiveGreenhouseRecipe;
 import vazkii.botania.client.integration.jei.*;
 import vazkii.botania.client.integration.jei.orechid.OrechidRecipeCategory;
 
@@ -132,17 +133,20 @@ public class jei implements IModPlugin {
         registration.addRecipeCatalyst(new ItemStack(ModBlocks.ultimateOrechid), OrechidRecipeCategory.TYPE);
 
         registration.addRecipeCatalyst(new ItemStack(ModBlocks.electricGreenhouse), GreenhouseRecipeCategory.TYPE);
+        registration.addRecipeCatalyst(new ItemStack(ModBlocks.primitiveGreenhouse), PrimitiveGreenhouseRecipeCategory.TYPE);
     }
 
     @Override
     public void registerCategories(IRecipeCategoryRegistration registration) {
         registration.addRecipeCategories(new GreenhouseRecipeCategory(registration.getJeiHelpers().getGuiHelper(), new ResourceLocation(AutoBotany.MOD_ID, "textures/jei/greenhouse.png"), ModBlocks.electricGreenhouse));
+        registration.addRecipeCategories(new PrimitiveGreenhouseRecipeCategory(registration.getJeiHelpers().getGuiHelper(), new ResourceLocation(AutoBotany.MOD_ID, "textures/jei/greenhouse.png"), ModBlocks.primitiveGreenhouse));
         IModPlugin.super.registerCategories(registration);
     }
 
     @Override
     public void registerRecipes(IRecipeRegistration registration) {
         registration.addRecipes(GreenhouseRecipeCategory.TYPE, Minecraft.getInstance().level.getRecipeManager().getAllRecipesFor(GreenhouseRecipe.Type.INSTANCE));
+        registration.addRecipes(PrimitiveGreenhouseRecipeCategory.TYPE, Minecraft.getInstance().level.getRecipeManager().getAllRecipesFor(PrimitiveGreenhouseRecipe.Type.INSTANCE));
         IModPlugin.super.registerRecipes(registration);
     }
 }

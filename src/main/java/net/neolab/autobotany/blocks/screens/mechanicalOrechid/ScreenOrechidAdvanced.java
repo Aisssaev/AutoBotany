@@ -57,8 +57,8 @@ public class ScreenOrechidAdvanced extends ExtraScreenBase<ContainerOrechidAdvan
         for (int i = 0; i < 2; i++){
             if (blockEntity.getInventory().getStackInSlot(i).isEmpty() && this.minecraft != null){
                 List<ItemStack> items = new ArrayList<>();
-                items.add(new ItemStack(ModItems.catalystManaInfinity));
-                items.add(new ItemStack(ModItems.catalystStoneInfinity));
+                items.add(new ItemStack(ModItems.moduleManaInfinity));
+                items.add(new ItemStack(ModItems.moduleStoneInfinity));
 
                 GhostItemRenderer.renderGhostItem(items, poseStack, this.leftPos + 14 + 140 * i, this.topPos + 83);
             }

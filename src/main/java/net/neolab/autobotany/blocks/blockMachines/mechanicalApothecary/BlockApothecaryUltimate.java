@@ -1,5 +1,7 @@
 package net.neolab.autobotany.blocks.blockMachines.mechanicalApothecary;
 
+import net.minecraft.network.chat.Component;
+import net.minecraft.world.item.TooltipFlag;
 import net.neolab.autobotany.ModBlocks;
 import net.neolab.autobotany.blocks.base.BotanicalBlock;
 import net.neolab.autobotany.blocks.containers.mechanicalApothecary.ContainerApothecaryUltimate;
@@ -47,6 +49,7 @@ import org.moddingx.libx.render.ItemStackRenderer;
 
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
+import java.util.List;
 import java.util.function.Consumer;
 
 public class BlockApothecaryUltimate extends MenuBlockBE<BlockEntityApothecaryUltimate, ContainerApothecaryUltimate> {
@@ -137,5 +140,10 @@ public class BlockApothecaryUltimate extends MenuBlockBE<BlockEntityApothecaryUl
 
     static {
         SHAPE = new RotationShape(Shapes.or(BotanicalBlock.FRAME_SHAPE, new VoxelShape[]{box(0.0, 0.0, 0.0, 16.0, 1.0, 16.0), box(0.0, 1.0, 0.0, 1.0, 15.0, 1.0), box(15.0, 1.0, 0.0, 16.0, 15.0, 1.0), box(0.0, 1.0, 15.0, 1.0, 15.0, 16.0), box(15.0, 1.0, 15.0, 16.0, 15.0, 16.0), box(0.0, 15.0, 1.0, 1.0, 16.0, 15.0), box(15.0, 15.0, 1.0, 16.0, 16.0, 15.0), box(0.0, 15.0, 0.0, 16.0, 16.0, 1.0), box(0.0, 15.0, 15.0, 16.0, 16.0, 16.0), box(12.0, 10.0, 4.0, 13.0, 13.0, 12.0), box(3.0, 1.0, 3.0, 13.0, 2.0, 13.0), box(5.0, 2.0, 5.0, 11.0, 9.0, 11.0), box(3.0, 9.0, 3.0, 13.0, 10.0, 13.0), box(3.0, 10.0, 12.0, 13.0, 13.0, 13.0), box(3.0, 10.0, 3.0, 13.0, 13.0, 4.0), box(3.0, 10.0, 4.0, 4.0, 13.0, 12.0)}));
+    }
+
+    @Override
+    public void appendHoverText(ItemStack stack, @org.jetbrains.annotations.Nullable BlockGetter getter, List<Component> tooltip, TooltipFlag flag) {
+        tooltip.add(Component.literal("§6[!] §aБлок ломается киркой"));
     }
 }

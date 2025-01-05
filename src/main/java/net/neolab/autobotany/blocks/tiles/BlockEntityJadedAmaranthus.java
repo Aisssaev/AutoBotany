@@ -63,7 +63,7 @@ public class BlockEntityJadedAmaranthus extends BotanicalTile implements IInWorl
         LAST_OUTPUT_SLOT = FIRST_OUTPUT_SLOT + 15;
 
         inventory = BaseItemStackHandler.builder(LAST_OUTPUT_SLOT + 1)
-                .validator((stack) -> { return stack.getItem() == ModItems.catalystManaInfinity.asItem() || stack.getItem() == ModItems.catalystPetal.asItem() || stack.getItem() == ModItems.catalystPetalBlock.asItem();}, UPGRADE_SLOT.stream().mapToInt(Integer::intValue).toArray())
+                .validator((stack) -> { return stack.getItem() == ModItems.moduleManaInfinity.asItem() || stack.getItem() == ModItems.modulePetal.asItem() || stack.getItem() == ModItems.modulePetalBlock.asItem();}, UPGRADE_SLOT.stream().mapToInt(Integer::intValue).toArray())
                 .output(FIRST_OUTPUT_SLOT, LAST_OUTPUT_SLOT + 1)
                 .slotLimit(1, UPGRADE_SLOT.stream().mapToInt(Integer::intValue).toArray())
                 .contentsChanged((slot) -> {this.setChanged();this.setDispatchable();this.changedUpgrade(slot);})
@@ -79,11 +79,11 @@ public class BlockEntityJadedAmaranthus extends BotanicalTile implements IInWorl
             petalBlockUpgrade = false;
 
             for (int slotUpgrade: UPGRADE_SLOT){
-                if (!this.getInventory().getStackInSlot(slotUpgrade).isEmpty() && this.getInventory().getStackInSlot(slotUpgrade).getItem() == ModItems.catalystPetal.asItem()){
+                if (!this.getInventory().getStackInSlot(slotUpgrade).isEmpty() && this.getInventory().getStackInSlot(slotUpgrade).getItem() == ModItems.modulePetal.asItem()){
                     petalUpgrade = true;
                 }
 
-                if (!this.getInventory().getStackInSlot(slotUpgrade).isEmpty() && this.getInventory().getStackInSlot(slotUpgrade).getItem() == ModItems.catalystPetalBlock.asItem()){
+                if (!this.getInventory().getStackInSlot(slotUpgrade).isEmpty() && this.getInventory().getStackInSlot(slotUpgrade).getItem() == ModItems.modulePetalBlock.asItem()){
                     petalBlockUpgrade = true;
                 }
             }
@@ -99,8 +99,8 @@ public class BlockEntityJadedAmaranthus extends BotanicalTile implements IInWorl
         }
 
         if (this.getCurrentMana() != this.getMaxMana()){
-            if (inventory.getStackInSlot(0).getItem() == ModItems.catalystManaInfinity ||
-                    inventory.getStackInSlot(1).getItem() == ModItems.catalystManaInfinity){
+            if (inventory.getStackInSlot(0).getItem() == ModItems.moduleManaInfinity ||
+                    inventory.getStackInSlot(1).getItem() == ModItems.moduleManaInfinity){
                 this.receiveMana(this.getMaxMana());
             }
         }

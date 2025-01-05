@@ -90,7 +90,7 @@ public class BlockEntityOrechidPattern extends BotanicalTile
 
         if (upgrade_slot != null){
             this.inventory = BaseItemStackHandler.builder(LAST_OUTPUT_SLOT + 1)
-                    .validator((stack) -> { return stack.getItem() == ModItems.catalystManaInfinity.asItem() || stack.getItem() == ModItems.catalystStoneInfinity.asItem();}, UPGRADE_SLOT_1, UPGRADE_SLOT_2)
+                    .validator((stack) -> { return stack.getItem() == ModItems.moduleManaInfinity.asItem() || stack.getItem() == ModItems.moduleStoneInfinity.asItem();}, UPGRADE_SLOT_1, UPGRADE_SLOT_2)
                     .validator((stack) -> { return this.level != null && getInputs().contains(stack.getItem());}, Range.closedOpen(FIRST_INPUT_SLOT, LAST_INPUT_SLOT + 1))
                     .validator((stack) -> { return getOutputs().contains(stack.getItem());}, FILTER_SLOTS.stream().mapToInt(Integer::intValue).toArray())
                     .output(Range.closedOpen(FIRST_OUTPUT_SLOT, LAST_OUTPUT_SLOT + 1)).contentsChanged(() -> {this.setChanged();this.setDispatchable();})
@@ -153,8 +153,8 @@ public class BlockEntityOrechidPattern extends BotanicalTile
             }
 
             if (UPGRADE_SLOT_1 != -1 && UPGRADE_SLOT_2 != -1) {
-                if ((this.inventory.getStackInSlot(UPGRADE_SLOT_1).getItem() == ModItems.catalystManaInfinity
-                        || this.inventory.getStackInSlot(UPGRADE_SLOT_2).getItem() == ModItems.catalystManaInfinity)) {
+                if ((this.inventory.getStackInSlot(UPGRADE_SLOT_1).getItem() == ModItems.moduleManaInfinity
+                        || this.inventory.getStackInSlot(UPGRADE_SLOT_2).getItem() == ModItems.moduleManaInfinity)) {
                     if (this.getMaxMana() != this.getCurrentMana()) this.receiveMana(this.getMaxMana());
                     catalystMana = true;
                 } else this.catalystMana = false;
@@ -205,8 +205,8 @@ public class BlockEntityOrechidPattern extends BotanicalTile
 
                 if (count_success != 0){
                     if (UPGRADE_SLOT_1 != -1 && UPGRADE_SLOT_2 != -1){
-                        if (this.inventory.getStackInSlot(UPGRADE_SLOT_1).getItem() == ModItems.catalystStoneInfinity
-                                || this.inventory.getStackInSlot(UPGRADE_SLOT_2).getItem() == ModItems.catalystStoneInfinity){
+                        if (this.inventory.getStackInSlot(UPGRADE_SLOT_1).getItem() == ModItems.moduleStoneInfinity
+                                || this.inventory.getStackInSlot(UPGRADE_SLOT_2).getItem() == ModItems.moduleStoneInfinity){
                             ItemStack stone = new ItemStack(Items.STONE);
                             stone.setCount(64);
                             for (int i = FIRST_INPUT_SLOT; i <= LAST_INPUT_SLOT; i++){

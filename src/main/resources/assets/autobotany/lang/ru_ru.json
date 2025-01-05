@@ -49,6 +49,7 @@
 
   "block.autobotany.electric_greenhouse": "Электрическая теплица",
   "block.autobotany.jaded_amaranthus": "Измученный амарант",
+  "block.autobotany.primitive_greenhouse": "Примитивная теплица",
 
   "block.autobotany.malachite_dragonstone_block": "Малахитовый блок дракона",
   "block.autobotany.saffron_dragonstone_block": "Саффроновый блок дракона",
@@ -88,14 +89,14 @@
   "item.autobotany.rune_energy": "Руна энергии",
 
 
-  "item.autobotany.catalyst_mana_infinity": "Катализатор бесконечной маны",
-  "item.autobotany.catalyst_living_rock_infinity": "Катализатор бесконечного жизнекамня",
-  "item.autobotany.catalyst_water_infinity": "Катализатор бесконечной воды",
-  "item.autobotany.catalyst_seed_infinity": "Катализатор бесконечных семян",
-  "item.autobotany.catalyst_speed": "Катализатор скорости",
-  "item.autobotany.catalyst_stone_infinity": "Катализатор бесконечного камня",
-  "item.autobotany.catalyst_petal": "Катализатор лепестков",
-  "item.autobotany.catalyst_petal_block": "Катализатор блоков лепестков",
+  "item.autobotany.module_mana_infinity": "Модуль: Бесконечная мана",
+  "item.autobotany.module_living_rock_infinity": "Модуль: Бесконечный жизнекамень",
+  "item.autobotany.module_water_infinity": "Модуль: Бесконечная вода",
+  "item.autobotany.module_seed_infinity": "Модуль: Бесконечные семена",
+  "item.autobotany.module_speed": "Модуль: Скорость",
+  "item.autobotany.module_stone_infinity": "Модуль: Бесконечный камень",
+  "item.autobotany.module_petal": "Модуль: Лепесток",
+  "item.autobotany.module_petal_block": "Модуль: Блок лепестков",
 
   "item.autobotany.module_efficiency": "Модуль теплицы: Эффективность",
   "item.autobotany.module_speed1": "Базовый модуль теплицы: Скорость",
@@ -112,7 +113,7 @@
   "item.autobotany.module_recipe_multiplier3": "Ультимативный модуль теплицы: Расширение",
 
   "autobotany.tooltip.screen.mana": "Мана: %1$s §eМаны / %2$s §eМаны",
-  "autobotany.tooltip.screen.catalyst_slot": "Cлот для катализаторов",
+  "autobotany.tooltip.screen.module_slot": "Cлот для катализаторов",
   "autobotany.tooltip.screen.upgrade_slot": "Cлот для улучшений",
   "autobotany.tooltip.screen.livingrock_slot": "Cлот для жизнекамня",
   "autobotany.tooltip.screen.seed_slot": "Cлот для семян",
@@ -121,6 +122,7 @@
   "autobotany.tooltip.screen.charge": "Заряд: %1$s §eEU / %2$s §eEU",
   "autobotany.screen.title.consumption": "Потребление: %1$s §eEU/t",
   "autobotany.screen.title.greenhouse": "Электрическая теплица",
+  "autobotany.screen.title.primitive_greenhouse": "Примитивная теплица",
   "autobotany.screen.title.ticks": "%1$s тиков",
   "autobotany.tooltip.mana": "Маны: %1$s",
 

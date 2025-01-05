@@ -96,15 +96,15 @@ public class BlockEntityRunicAltarPattern extends WorkingTile<RunicAltarRecipe>
         if (isUpgrade[0] && isUpgrade[1]){
             inventory = BaseItemStackHandler.builder(LAST_OUTPUT_SLOT + 1)
                     .validator((stack) -> {return stack.getItem() == BotaniaBlocks.livingrock.asItem();}, LIVINGROCK_SLOT_1, LIVINGROCK_SLOT_2, LIVINGROCK_SLOT_3)
-                    .validator((stack) -> {return (stack.getItem() == ModItems.catalystManaInfinity.asItem() || stack.getItem() == ModItems.catalystLivingRockInfinity.asItem());}, UPGRADE_SLOT_1)
-                    .validator((stack) -> {return (stack.getItem() == ModItems.catalystManaInfinity.asItem() || stack.getItem() == ModItems.catalystLivingRockInfinity.asItem()) ;}, UPGRADE_SLOT_2)
+                    .validator((stack) -> {return (stack.getItem() == ModItems.moduleManaInfinity.asItem() || stack.getItem() == ModItems.moduleLivingRockInfinity.asItem());}, UPGRADE_SLOT_1)
+                    .validator((stack) -> {return (stack.getItem() == ModItems.moduleManaInfinity.asItem() || stack.getItem() == ModItems.moduleLivingRockInfinity.asItem()) ;}, UPGRADE_SLOT_2)
                     .validator((stack) -> {return this.level != null && RecipeHelper.isItemValidInput(this.level.getRecipeManager(), BotaniaRecipeTypes.RUNE_TYPE, stack);}, Range.closedOpen(FIRST_INPUT_SLOT, LAST_INPUT_SLOT + 1))
                     .slotLimit(1, UPGRADE_SLOT_1, UPGRADE_SLOT_2).output(Range.closedOpen(FIRST_OUTPUT_SLOT, LAST_OUTPUT_SLOT + 1)).contentsChanged(() -> {this.setChanged();this.setDispatchable();this.needsRecipeUpdate();})
                     .build();
         } else if (isUpgrade[0]){
             inventory = BaseItemStackHandler.builder(LAST_OUTPUT_SLOT + 1)
                     .validator((stack) -> {return stack.getItem() == BotaniaBlocks.livingrock.asItem();}, LIVINGROCK_SLOT_1, LIVINGROCK_SLOT_2, LIVINGROCK_SLOT_3)
-                    .validator((stack) -> {return stack.getItem() == ModItems.catalystManaInfinity.asItem() || stack.getItem() == ModItems.catalystLivingRockInfinity.asItem();}, UPGRADE_SLOT_1)
+                    .validator((stack) -> {return stack.getItem() == ModItems.moduleManaInfinity.asItem() || stack.getItem() == ModItems.moduleLivingRockInfinity.asItem();}, UPGRADE_SLOT_1)
                     .validator((stack) -> {return this.level != null && RecipeHelper.isItemValidInput(this.level.getRecipeManager(), BotaniaRecipeTypes.RUNE_TYPE, stack);}, Range.closedOpen(FIRST_INPUT_SLOT, LAST_INPUT_SLOT + 1))
                     .slotLimit(1, UPGRADE_SLOT_1, UPGRADE_SLOT_2).output(Range.closedOpen(FIRST_OUTPUT_SLOT, LAST_OUTPUT_SLOT + 1)).contentsChanged(() -> {this.setChanged();this.setDispatchable();this.needsRecipeUpdate();})
                     .build();
@@ -137,8 +137,8 @@ public class BlockEntityRunicAltarPattern extends WorkingTile<RunicAltarRecipe>
     public List<ItemStack> getUpgrades(){
         List<ItemStack> res = new ArrayList<>();
 
-        res.add(new ItemStack(ModItems.catalystManaInfinity));
-        res.add(new ItemStack(ModItems.catalystLivingRockInfinity));
+        res.add(new ItemStack(ModItems.moduleManaInfinity));
+        res.add(new ItemStack(ModItems.moduleLivingRockInfinity));
 
         return res;
     }
@@ -163,8 +163,8 @@ public class BlockEntityRunicAltarPattern extends WorkingTile<RunicAltarRecipe>
             }
 
             if (isUpgrade[0] && this.getMaxMana() != this.getCurrentMana()
-                    && ((!getSlotUpgrade1().isEmpty() && getSlotUpgrade1().getItem() == ModItems.catalystManaInfinity)
-                    || (isUpgrade[1] && !getSlotUpgrade2().isEmpty() && getSlotUpgrade2().getItem() == ModItems.catalystManaInfinity))){
+                    && ((!getSlotUpgrade1().isEmpty() && getSlotUpgrade1().getItem() == ModItems.moduleManaInfinity)
+                    || (isUpgrade[1] && !getSlotUpgrade2().isEmpty() && getSlotUpgrade2().getItem() == ModItems.moduleManaInfinity))){
                 this.receiveMana(this.getMaxMana());
             }
 
@@ -173,8 +173,8 @@ public class BlockEntityRunicAltarPattern extends WorkingTile<RunicAltarRecipe>
                             inventory.getStackInSlot(LIVINGROCK_SLOT_2).isEmpty() ||
                             inventory.getStackInSlot(LIVINGROCK_SLOT_3).isEmpty())){
 
-                if ((!getSlotUpgrade1().isEmpty() && getSlotUpgrade1().getItem() == ModItems.catalystLivingRockInfinity.asItem()) ||
-                        (isUpgrade[1] && !getSlotUpgrade2().isEmpty() && getSlotUpgrade2().getItem() == ModItems.catalystLivingRockInfinity.asItem())){
+                if ((!getSlotUpgrade1().isEmpty() && getSlotUpgrade1().getItem() == ModItems.moduleLivingRockInfinity.asItem()) ||
+                        (isUpgrade[1] && !getSlotUpgrade2().isEmpty() && getSlotUpgrade2().getItem() == ModItems.moduleLivingRockInfinity.asItem())){
                     addLivingRockSlots();
                 }
             }

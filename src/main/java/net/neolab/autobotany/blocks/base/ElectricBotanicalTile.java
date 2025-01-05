@@ -61,7 +61,7 @@ import java.util.function.Predicate;
 import java.util.function.Supplier;
 
 
-public abstract class ElectricBotanicalTile extends BaseTileEntity implements ManaPool, KeyLocked, SparkAttachable, ThrottledPacket, WandHUD, TickingBlock, IEnergySink, IEUStorage, IWrenchableTile {
+public abstract class ElectricBotanicalTile extends BaseTileEntity implements ManaPool, KeyLocked, SparkAttachable, ThrottledPacket, WandHUD, TickingBlock, IEnergySink, IEUStorage {
     //IC2 PArt
     @NetworkInfo
     public int energy;
@@ -244,20 +244,20 @@ public abstract class ElectricBotanicalTile extends BaseTileEntity implements Ma
         EnergyNet.INSTANCE.updateTile(this);
     }
 
-    @Override
-    public boolean canSetFacing(Direction dir) {
-        return dir != this.getFacing() && dir.getAxis().isHorizontal();
-    }
-
-    @Override
-    public boolean canRemoveBlock(Player player) {
-        return true;
-    }
-
-    @Override
-    public double getDropRate(Player player) {
-        return 0.85 - 0.05 * (double)this.baseTier;
-    }
+//    @Override
+//    public boolean canSetFacing(Direction dir) {
+//        return dir != this.getFacing() && dir.getAxis().isHorizontal();
+//    }
+//
+//    @Override
+//    public boolean canRemoveBlock(Player player) {
+//        return true;
+//    }
+//
+//    @Override
+//    public double getDropRate(Player player) {
+//        return 0.85 - 0.05 * (double)this.baseTier;
+//    }
 
     public void notifyListeners() {
 

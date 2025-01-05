@@ -84,7 +84,7 @@ public class BlockEntityManaPoolPattern extends RecipeTile<ManaInfusionRecipe>
         if (isUpgrade){
             inventory = BaseItemStackHandler.builder(LAST_OUTPUT_SLOT + 1)
                     .validator((stack) -> { return this.getCatalysts().contains(stack.getItem()); }, CATALYSTS_SLOT)
-                    .validator((stack) -> { return stack.getItem() == ModItems.catalystManaInfinity.asItem();}, UPGRADE_SLOT)
+                    .validator((stack) -> { return stack.getItem() == ModItems.moduleManaInfinity.asItem();}, UPGRADE_SLOT)
                     .validator((stack) -> { return this.level != null && RecipeHelper.isItemValidInput(this.level.getRecipeManager(), BotaniaRecipeTypes.MANA_INFUSION_TYPE, stack);}, Range.closedOpen(FIRST_INPUT_SLOT, LAST_INPUT_SLOT + 1))
                     .slotLimit(1, CATALYSTS_SLOT, UPGRADE_SLOT).output(Range.closedOpen(FIRST_OUTPUT_SLOT, LAST_OUTPUT_SLOT + 1)).contentsChanged(() -> {this.setChanged();this.setDispatchable();this.needsRecipeUpdate();})
                     .build();
@@ -129,7 +129,10 @@ public class BlockEntityManaPoolPattern extends RecipeTile<ManaInfusionRecipe>
             }
 
             if (isUpgrade && this.getMaxMana() != this.getCurrentMana() && !inventory.getStackInSlot(UPGRADE_SLOT).isEmpty()){
+                actAsMana = false;
                 this.receiveMana(this.getMaxMana());
+            } else {
+                actAsMana = true;
             }
 
             if (this.cooldown > 0) {

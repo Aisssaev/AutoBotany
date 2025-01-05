@@ -1,5 +1,8 @@
 package net.neolab.autobotany.blocks.blockMachines.mechanicalOrechid;
 
+import net.minecraft.network.chat.Component;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.TooltipFlag;
 import net.neolab.autobotany.ModBlocks;
 import net.neolab.autobotany.blocks.containers.mechanicalOrechid.ContainerOrechidAdvanced;
 import net.neolab.autobotany.blocks.screens.mechanicalOrechid.ScreenOrechidAdvanced;
@@ -23,12 +26,14 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.client.extensions.common.IClientItemExtensions;
 import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 import org.moddingx.libx.base.tile.MenuBlockBE;
 import org.moddingx.libx.mod.ModX;
 import org.moddingx.libx.registration.SetupContext;
 import org.moddingx.libx.render.ItemStackRenderer;
 
 import javax.annotation.Nonnull;
+import java.util.List;
 import java.util.function.Consumer;
 
 public class BlockOrechidAdvanced extends MenuBlockBE<BlockEntityOrechidAdvanced, ContainerOrechidAdvanced> {
@@ -95,5 +100,10 @@ public class BlockOrechidAdvanced extends MenuBlockBE<BlockEntityOrechidAdvanced
     static {
         COLLISION_SHAPE = Shapes.joinUnoptimized(box(0.0, 0.0, 0.0, 16.0, 2.0, 16.0), box(5.0, 2.0, 5.0, 11.0, 3.0, 11.0), BooleanOp.OR);
         SHAPE = box(0.0, 0.0, 0.0, 16.0, 11.4, 16.0);
+    }
+
+    @Override
+    public void appendHoverText(ItemStack stack, @Nullable BlockGetter getter, List<Component> tooltip, TooltipFlag flag) {
+        tooltip.add(Component.literal("§6[!] §aБлок ломается киркой"));
     }
 }
